@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<robot name="bot"
+    xmlns:xacro="http://www.ros.org/wiki/xacro"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <xacro:include filename="$(find bot_base)/urdf/globals.urdf.xacro" />
+    <xacro:include filename="$(find bot_base)/urdf/chassis.urdf.xacro" />
+    <xacro:include filename="$(find bot_base)/urdf/wheels.urdf.xacro" />
+    <xacro:include filename="bot_differential_drive_sim.ros2_control.xacro" />
+
+    <xacro:bot_differential_drive_control_sim />
+</robot>
